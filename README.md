@@ -1,24 +1,17 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+To run this project set up rails on your machine, you can find a guide here:
 
-Things you may want to cover:
+http://guides.railsgirls.com/install
 
-* Ruby version
+Then once you have cloned this project you can navigate into the directory and run
 
-* System dependencies
+`$ bundle install`
 
-* Configuration
+Now you should be able to run the server running
 
-* Database creation
+`$ bundle exec puma`
 
-* Database initialization
+From the browser you should be able to access the site on
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+http://localhost:3000
