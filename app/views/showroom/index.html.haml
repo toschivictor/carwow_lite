@@ -6,3 +6,19 @@
 %p
   jQuery has already been installed.
 
+
+-# you can add comments like this
+
+-# the data for the cars to show will be provided to the this file via the showroom_controller
+-# here is an example of how to loop over all the cars and pull out the data you need:
+
+%ul
+  - @cars.each do |car|
+-# all available data: car[:make], car[:model], car[:engine], car[:details], car[:image_name], car[:has_new_offer]    
+    %li 
+      =car[:make]
+      =car[:model]
+      - if car[:has_new_offer]
+        1 new offer
+-# you can load the car photo with the following snippit of code:
+-#  %img{:src => asset_path(car[:image_name])}
