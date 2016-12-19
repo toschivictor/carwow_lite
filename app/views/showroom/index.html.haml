@@ -14,8 +14,8 @@
 
 %ul
   - @cars.each do |car|
--# all available data: car[:make], car[:model], car[:engine], car[:details], car[:image_name], car[:has_new_offer]    
-    %li 
+    -# all available data: car[:make], car[:model], car[:engine], car[:details], car[:image_name], car[:has_new_offer]
+    %li
       =car[:make]
       =car[:model]
       - if car[:has_new_offer]
