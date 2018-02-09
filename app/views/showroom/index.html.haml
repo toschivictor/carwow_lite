@@ -1,23 +1,28 @@
 %h1 Showroom
 
 %p
-  The view for this page is located in: /app/views/showroom/index.html.haml
-%p
-  CSS and JavaScript files are under: /app/assets
-%p
-  jQuery is installed and ready if you wish to use it.
+  Tips:
+
+%ul
+  %li
+    The view for this page is located in: /app/views/showroom/index.html.haml
+  %li
+    CSS and JavaScript files are under: /app/assets
+  %li
+    jQuery is installed and ready if you wish to use it.
+  %li
+    Neat is installed for the CSS layout, but feel free to use another option if you wish.
 
 -# the data for the cars to show is provided by showroom_controller
 -# here is an example of how to loop over the cars and pull out the data you need:
 
-%ul
-  - @cars.each do |car|
-    -# all available data: car[:make], car[:model], car[:engine], car[:details], car[:image_name], car[:has_new_offer]
-    %li
-      =car[:make]
-      =car[:model]
-      - if car[:has_new_offer]
-        1 new offer
+- @cars.each do |car|
+  -# all available data: car[:make], car[:model], car[:engine], car[:details], car[:image_name], car[:has_new_offer]
+  %div
+    =car[:make]
+    =car[:model]
+    - if car[:has_new_offer]
+      1 new offer
 
 -# the following code snippet can be used to display a car's image
 -# %img{:src => asset_path(car[:image_name])}
