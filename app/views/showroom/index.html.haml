@@ -19,8 +19,8 @@
 - @cars.each do |car|
   -# all available data: car[:make], car[:model], car[:engine], car[:details], car[:image_name], car[:has_new_offer]
   %div
-    =car[:make]
-    =car[:model]
+    = car[:make]
+    = car[:model]
     - if car[:has_new_offer]
       1 new offer
 
